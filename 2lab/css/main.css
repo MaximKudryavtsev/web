@@ -1,0 +1,67 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper
+{
+    width: 1000px;
+    margin: 25px auto;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+
+.wrapper .drawing_area
+{
+    width: 800px;
+    height: 600px;
+}
+
+.wrapper .input
+{
+    width: 199px;
+    border-left: 1px solid black;
+    height: 600px;
+    text-align: center;
+}
+
+.input .shape_select
+{
+    margin: 20px auto;
+    width: 120px;
+    display: block;
+}
+
+.input .general_info
+{
+    margin-bottom: 20px;
+}
+
+.input .info_row
+{
+    margin-bottom: 15px;
+}
+
+.triangle_info input,
+.rectangle_info input
+{
+    width: 50px;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.float_right
+{
+    float: right;
+}
+
+.float_left
+{
+    float: left;
+}
+

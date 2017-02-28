@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2 lab</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <canvas id="drawingArea" class="drawing_area float_left"></canvas>
+        <div class="input float_right">
+            <select name="shapes" id="shapeSelect" class="shape_select" >
+                <option value="triangle">triangle</option>
+                <option value="rectangle">rectangle</option>
+                <option value="circle">circle</option>
+            </select>
+            <div class="general_info">
+                <div>
+                    <label for="borderColor">Border color</label>
+                    <input type="text" id="borderColor">
+                </div>
+                <div>
+                    <label for="fillColor">Border color</label>
+                    <input type="text" id="fillColor">
+                </div>
+            </div>
+            <div class="triangle_info">
+                <div class="info_row">
+                    <label for="triangle_x1">x1</label>
+                    <input type="text" id="triangle_x1">
+                    <label for="triangle_y1">y1</label>
+                    <input type="text" id="triangle_y1">
+                </div>
+                <div class="info_row">
+                    <label for="triangle_x2">x2</label>
+                    <input type="text" id="triangle_x2">
+                    <label for="triangle_y2">y2</label>
+                    <input type="text" id="triangle_y2">
+                </div>
+                <div class="info_row">
+                    <label for="triangle_x3">x3</label>
+                    <input type="text" id="triangle_x3">
+                    <label for="triangle_y3">y3</label>
+                    <input type="text" id="triangle_y3">
+                </div>
+            </div>
+            <div class="rectangle_info">
+                <div class="info_row">
+                    <label for="rectangle_x1">x1</label>
+                    <input type="text" id="rectangle_x1">
+                    <label for="rectangle_y1">y1</label>
+                    <input type="text" id="rectangle_y1">
+                </div>
+                <div class="info_row">
+                    <label for="rectangle_x2">x2</label>
+                    <input type="text" id="rectangle_x2">
+                    <label for="rectangle_y2">y2</label>
+                    <input type="text" id="rectangle_y2">
+                </div>
+            </div>
+            <div class="circle_info">
+                <div class="info_row">
+                    <label for="circle_x">x</label>
+                    <input type="text" id="circle_x">
+                </div>
+                <div class="info_row"></div>
+                    <label for="circle_y">y</label>
+                    <input type="text" id="circle_y">
+                </div>
+                <div class="info_row">
+                    <label for="radius">radius</label>
+                    <input type="text" id="radius"
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
