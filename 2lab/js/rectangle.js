@@ -1,15 +1,16 @@
-var DEFAULT_X1 = 50,
-    DEFAULT_Y1 = 50,
-    DEFAULT_X2 = 150,
-    DEFAULT_Y2 = 100;
+var DEFAULT_RECTANGLE_X1 = 200,
+    DEFAULT_RECTANGLE_Y1 = 200,
+    DEFAULT_RECTANGLE_X2 = 400,
+    DEFAULT_RECTANGLE_Y2 = 400;
+
 function Rectangle()
 {
     Shape.apply(this, arguments);
-    this.x1 = DEFAULT_X1;
-    this.y1 = DEFAULT_Y1;
-    this.x2 = DEFAULT_X2;
-    this.y2 = DEFAULT_Y2;
-    
+    this.x1 = DEFAULT_RECTANGLE_X1;
+    this.y1 = DEFAULT_RECTANGLE_Y1;
+    this.x2 = DEFAULT_RECTANGLE_X2;
+    this.y2 = DEFAULT_RECTANGLE_Y2;
+
     this.setX1 = function (x)
     {
         this.x1 = x;
@@ -43,7 +44,6 @@ Rectangle.prototype.draw = function(ctx)
     ctx.fillStyle = this.getFillColor();
     ctx.fillRect(this.x1, this.y1, this.widthRectangle(), this.heightRectangle());
     ctx.strokeStyle = this.getBorderColor();
-    ctx.lineWidth = 3;
     ctx.strokeRect(this.x1, this.y1, this.widthRectangle(), this.heightRectangle());
     ctx.closePath();
 };

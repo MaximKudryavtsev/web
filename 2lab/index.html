@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <title>2 lab</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/index.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <canvas id="drawingArea" class="drawing_area float_left" ></canvas>
+        <canvas id="drawingArea" class="drawing_area float_left" width="800" height="600"></canvas>
         <div class="input float_right">
             <select name="shapes" id="shapeSelect" class="shape_select" >
-                <option value="triangle" selected>triangle</option>
+                <option value="circle" selected>circle</option>
+                <option value="triangle">triangle</option>
                 <option value="rectangle">rectangle</option>
-                <option value="circle">circle</option>
             </select>
             <div class="general_info">
                 <div>
@@ -71,7 +70,8 @@
                     <input type="text" id="radius">
                 </div>
             </div>
-            <div id="calculating"></div>
+            <div id="area"></div>
+            <div id="perimeter"></div>
             <button id="drawButton">draw</button>
 
 
@@ -80,10 +80,11 @@
         </div>
         <div class="clear"></div>
     </div>
+    <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/shape.js"></script>
     <script type="text/javascript" src="js/circle.js"></script>
     <script type="text/javascript" src="js/triangle.js"></script>
     <script type="text/javascript" src="js/rectangle.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+
 </body>
 </html>

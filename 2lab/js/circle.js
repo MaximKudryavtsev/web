@@ -1,13 +1,14 @@
-var DEFAULT_RADIUS = 40,
-    DEFAULT_X = 100,
-    DEFAULT_Y = 100;
+var DEFAULT_RADIUS = 50,
+    DEFAULT_CIRCLE_X = 200,
+    DEFAULT_CIRCLE_Y = 200;
 
 function Circle()
 {
     Shape.apply(this, arguments);
     this.radius = DEFAULT_RADIUS;
-    this.x = DEFAULT_X;
-    this.y = DEFAULT_Y;
+    this.x = DEFAULT_CIRCLE_X;
+    this.y = DEFAULT_CIRCLE_Y;
+
     this.setRadius = function(radius)
     {
         this.radius = radius;

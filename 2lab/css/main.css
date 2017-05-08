@@ -12,25 +12,20 @@
     border-radius: 4px;
 }
 
-
-.wrapper .drawing_area
-{
-    width: 800px;
-    height: 600px;
-}
-
 .wrapper .input
 {
     width: 199px;
     border-left: 1px solid black;
     height: 600px;
     text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .input .shape_select
 {
     margin: 20px auto;
-    width: 120px;
+    width: 100%;
     display: block;
 }
 
