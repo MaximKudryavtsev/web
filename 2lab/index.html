@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <canvas id="drawingArea" class="drawing_area float_left"></canvas>
+        <canvas id="drawingArea" class="drawing_area float_left" ></canvas>
         <div class="input float_right">
             <select name="shapes" id="shapeSelect" class="shape_select" >
                 <option value="triangle" selected>triangle</option>
@@ -71,7 +71,8 @@
                     <input type="text" id="radius">
                 </div>
             </div>
-            <button id="draw">draw</button>
+            <div id="calculating"></div>
+            <button id="drawButton">draw</button>
 
 
         </div>
@@ -79,5 +80,10 @@
         </div>
         <div class="clear"></div>
     </div>
+    <script type="text/javascript" src="js/shape.js"></script>
+    <script type="text/javascript" src="js/circle.js"></script>
+    <script type="text/javascript" src="js/triangle.js"></script>
+    <script type="text/javascript" src="js/rectangle.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

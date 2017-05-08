@@ -13,7 +13,7 @@ function Shape()
     {
         return this.fillColor;
     };
-    this.setBorderColor = function(borderColor)
+    this.setBorderColor = function(color)
     {
         this.borderColor = color;
     };

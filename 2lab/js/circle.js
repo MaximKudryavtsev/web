@@ -1,6 +1,7 @@
 var DEFAULT_RADIUS = 40,
     DEFAULT_X = 100,
     DEFAULT_Y = 100;
+
 function Circle()
 {
     Shape.apply(this, arguments);
@@ -25,13 +26,12 @@ Circle.prototype = Object.create(Shape.prototype);
 
 Circle.prototype.draw = function(ctx)
 {
-    context.beginPath();
-    context.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, false);
-    context.fillStyle = this.getFillColor();
-    context.fill();
-    context.lineWidth = 2;
-    context.strokeStyle = this.getBorderColor();
-    context.stroke();
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, false);
+    ctx.fillStyle = this.getFillColor();
+    ctx.fill();
+    ctx.strokeStyle = this.getBorderColor();
+    ctx.stroke();
 };
 
 Circle.prototype.calculateArea = function()
