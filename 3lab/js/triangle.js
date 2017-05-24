@@ -41,7 +41,7 @@ function Triangle()
     };
     this.getSideLength = function(x1, y1, x2, y2)
     {
-        return Math.round(Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2)))
+        return Math.round(Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2)));
     };
     this.sideLength1 = this.getSideLength(this.x1, this.y1, this.x2, this.y2);
     this.sideLength2 = this.getSideLength(this.x1, this.y1, this.x3, this.y3);

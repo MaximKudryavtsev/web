@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3 lab</title>
+    <link rel="stylesheet" href="css/style.[aa2c00ff].css">
+</head>
+<body>
+    <div class="wrapper container">
+        <canvas id="drawingArea" class="drawing_area float_left" width="800" height="600"></canvas>
+        <div class="input float_right">
+            <select name="shapes" id="shapeSelect" class="shape_select form-control" >
+                <option value="circle" selected>circle</option>
+                <option value="triangle">triangle</option>
+                <option value="rectangle">rectangle</option>
+            </select>
+            <div class="general_info">
+                <div>
+                    <label for="fillColor">fill color</label>
+                    <input type="text" id="fillColor" class="form-control">
+                    <label for="borderColor">Border color</label>
+                    <input type="text" id="borderColor" class="form-control">
+                </div>
+            </div>
+            <div class="triangle_info" id="triangleInfo">
+                <div class="info_row">
+                    <label for="triangleX1">x1</label>
+                    <input type="text" id="triangleX1" class="form-control">
+                    <label for="triangleY1">y1</label>
+                    <input type="text" id="triangleY1" class="form-control">
+                </div>
+                <div class="info_row">
+                    <label for="triangleX2">x2</label>
+                    <input type="text" id="triangleX2" class="form-control">
+                    <label for="triangleY2">y2</label>
+                    <input type="text" id="triangleY2" class="form-control">
+                </div>
+                <div class="info_row">
+                    <label for="triangleX3">x3</label>
+                    <input type="text" id="triangleX3" class="form-control">
+                    <label for="triangleY3">y3</label>
+                    <input type="text" id="triangleY3" class="form-control">
+                </div>
+            </div>
+            <div class="rectangle_info" id="rectangleInfo">
+                <div class="info_row">
+                    <label for="rectangleX1">x1</label>
+                    <input type="text" id="rectangleX1" class="form-control">
+                    <label for="rectangleY1">y1</label>
+                    <input type="text" id="rectangleY1" class="form-control">
+                </div>
+                <div class="info_row">
+                    <label for="rectangleX2">x2</label>
+                    <input type="text" id="rectangleX2" class="form-control">
+                    <label for="rectangleY2">y2</label>
+                    <input type="text" id="rectangleY2" class="form-control">
+                </div>
+            </div>
+            <div class="circle_info" id="circleInfo">
+                <div class="info_row">
+                    <label for="circleX">x</label>
+                    <input type="text" id="circleX" class="form-control">
+                </div>
+                <div class="info_row">
+                    <label for="circleY">y</label>
+                    <input type="text" id="circleY" class="form-control">
+                </div>
+                <div class="info_row">
+                    <label for="radius">radius</label>
+                    <input type="text" id="radius" class="form-control">
+                </div>
+            </div>
+            <div id="area"></div>
+            <div id="perimeter"></div>
+            <button id="drawButton" class="btn btn-primary">draw</button>
+
+
+        </div>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    <script type="text/javascript" src="js/index.[bbdf17c6].js"></script>
+</body>
+</html>

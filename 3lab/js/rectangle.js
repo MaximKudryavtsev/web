@@ -55,5 +55,5 @@ Rectangle.prototype.calculateArea = function()
 
 Rectangle.prototype.calculatePerimeter = function()
 {
-    return 2 * (this.widthRectangle() + this.heightRectangle())
+    return 2 * (this.widthRectangle() + this.heightRectangle());
 };

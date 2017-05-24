@@ -39,46 +39,45 @@ function draw()
     elements.shapeSelect.onchange = function()
     {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        switch (shapeSelect.value) 
-            {
-                case "circle" :
-                    elements.circle.style.display = "block";
-                    elements.triangle.style.display = "none";
-                    elements.rectangle.style.display = "none";
-                    drawCircle(ctx, elements);
-                    console.log('22');
-                    break;
-                case "triangle" :
-                    elements.circle.style.display = "none";
-                    elements.triangle.style.display = "block";
-                    elements.rectangle.style.display = "none";
-                    drawTriangle(ctx, elements);
-                    break;
-                case "rectangle" :
-                    elements.circle.style.display = "none";
-                    elements.triangle.style.display = "none";
-                    elements.rectangle.style.display = "block";
-                    drawRectangle(ctx, elements);
-                    break;
-            }
+        switch (elements.shapeSelect.value)
+        {
+        case "circle" :
+            elements.circle.style.display = "block";
+            elements.triangle.style.display = "none";
+            elements.rectangle.style.display = "none";
+            drawCircle(ctx, elements);
+            break;
+        case "triangle" :
+            elements.circle.style.display = "none";
+            elements.triangle.style.display = "block";
+            elements.rectangle.style.display = "none";
+            drawTriangle(ctx, elements);
+            break;
+        case "rectangle" :
+            elements.circle.style.display = "none";
+            elements.triangle.style.display = "none";
+            elements.rectangle.style.display = "block";
+            drawRectangle(ctx, elements);
+            break;
+        }
     };
 
     elements.startButton.onclick = function()
     {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        switch (shapeSelect.value) 
-            {
-            case "circle":
-                drawCircle(ctx, elements);
-                break;
-            case "rectangle":
-                drawRectangle(ctx, elements);
-                break;
-            case "triangle":
-                drawTriangle(ctx, elements);
-                break;
-            }
-    }
+        switch (elements.shapeSelect.value)
+        {
+        case "circle":
+            drawCircle(ctx, elements);
+            break;
+        case "rectangle":
+            drawRectangle(ctx, elements);
+            break;
+        case "triangle":
+            drawTriangle(ctx, elements);
+            break;
+        }
+    };
 
 
 }

@@ -20,7 +20,7 @@ function Circle()
     this.setY = function(y)
     {
         this.y = y;
-    }
+    };
 }
 
 Circle.prototype = Object.create(Shape.prototype);
@@ -37,10 +37,10 @@ Circle.prototype.draw = function(ctx)
 
 Circle.prototype.calculateArea = function()
 {
-    return Math.round(Math.PI * Math.pow(this.radius, 2))
+    return Math.round(Math.PI * Math.pow(this.radius, 2));
 };
 
 Circle.prototype.calculatePerimeter = function()
 {
-    return Math.round(2 * Math.PI * this.radius)
+    return Math.round(2 * Math.PI * this.radius);
 };
