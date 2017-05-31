@@ -1,0 +1,71 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper
+{
+    width: 1001px;
+    margin: 25px auto;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.wrapper .input
+{
+    width: 199px;
+    border-left: 1px solid black;
+    height: 600px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.input .shape_select
+{
+    margin: 20px auto;
+    width: 100%;
+    display: block;
+}
+
+.input .general_info
+{
+    margin-bottom: 20px;
+}
+
+.input .info_row
+{
+    margin-bottom: 15px;
+}
+
+.triangle_info input,
+.rectangle_info input
+{
+    width: 50px;
+    display: inline-block;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.float_right
+{
+    float: right;
+}
+
+.float_left
+{
+    float: left;
+}
+.hide
+{
+    display: none;
+}
+
+.show
+{
+    display: block;
+}
